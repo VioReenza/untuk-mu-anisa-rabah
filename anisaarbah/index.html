@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk Cinta Hidupku ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating Hearts -->
+    <div class="hearts-background" id="heartsBackground"></div>
+
+    <!-- Stars -->
+    <div class="stars" id="stars"></div>
+
+    <!-- Music Player -->
+    <div class="music-player">
+        <button class="music-btn" id="musicBtn" onclick="toggleMusic()">▶️</button>
+        <div class="music-info">
+            <div style="font-weight: bold;">Our Song</div>
+            <div style="font-size: 12px;">Click to play</div>
+        </div>
+    </div>
+
+    <!-- Audio Element -->
+    <audio id="bgMusic" loop>
+        <source src="videoplayback-_2_.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="container">
+        <div class="header">
+            <h1>Untuk Cinta Hidupku ❤️</h1>
+            <p>Kamu adalah alasan aku tersenyum setiap hari</p>
+        </div>
+
+        <div class="heart-container">
+            <div class="main-heart">💖</div>
+        </div>
+
+        <div class="card">
+            <h2>Happy Birthday 💕</h2>
+            <p>Dear, Anisa Arbah</p>
+            <p>Di hari spesial ini, aku ingin kamu tahu betapa bersyukurnya aku bisa memiliki kamu dalam hidupku. Kamu bukan hanya seseorang yang aku cintai, tapi juga tempat pulang, tempat berbagi cerita, dan
+alasan aku tersenyum di hari-hari yang melelahkan.
+
+Terima kasih untuk setiap perhatian kecil, kesabaran, dan ketulusan yang selalu .kamu berikan. Terima kasih sudah bertahan sejauh ini, sudah mau tumbuh bersama, dan tetap menggenggam tanganku meski tidak selalu mudah.
+
+Di usia barumu ini, aku berharap semua hal baik selalu mendekat padamu. Semoga langkahmu dimudahkan, impianmu satu per satu tercapai, dan hatimu selalu dipenuhi kebahagiaan. Jangan pernah ragu pada dirimu sendiri, karena aku selalu percaya kamu mampu melakukan hal-hal hebat.
+
+Semoga di ulang tahun ini dan seterusnya, aku masih bisa menjadi orang yang menemanimu, mendukungmu, dan mencintaimu dengan cara terbaik yang aku bisa.
+
+Aku sayang kamu, hari ini, besok, dan seterusnya...
+love u caaaaa🤍</p>
+        </div>
+
+        <div class="card">
+            <h2>album kamu 📸</h2>
+            <div class="gallery">
+                <div class="gallery-item" onclick="openModal(this)">
+                    <img src="WhatsApp Image 2026-01-12 at 18.59.45.jpeg">
+                    <div class="gallery-overlay">
+                        <p>cantik banget 💑</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openModal(this)">
+                    <img src="WhatsApp Image 2026-01-12 at 18.59.46.jpeg" alt="Moment 2">
+                    <div class="gallery-overlay">
+                        <p>imut 😄</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openModal(this)">
+                    <img src="WhatsApp Image 2026-01-12 at 18.59.465.jpeg" alt="Moment 3">
+                    <div class="gallery-overlay">
+                        <p>kaye bidadari 🌴</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openModal(this)">
+                    <img src="WhatsApp Image 2026-01-12 at 18.59.47.jpeg" alt="Moment 4">
+                    <div class="gallery-overlay">
+                        <p>so sweet ✨</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openModal(this)">
+                    <img src="WhatsApp Image 2026-01-12 at 19.02.29.jpeg" alt="Moment 5">
+                    <div class="gallery-overlay">
+                        <p>milik ku 🎉</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openModal(this)">
+                    <img src="WhatsApp Image 2026-01-12 at 20.14.23.jpeg" alt="Moment 5">
+                    <div class="gallery-overlay">
+                        <p>milik ku 🎉</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="quote-box">
+            Dari sekian banyak orang yang pernah aku temui, 
+            kamu adalah yang paling istimewa. Bukan karena kamu sempurna, 
+            tapi karena bersamamu aku merasa sempurna.
+        </div>
+        <div class="button-container">
+            <a href="#" class="button" onclick="showLoveMessage(); return false;">Pesan Untukmu 💌</a>
+        </div>
+
+        <div class="footer">
+            <p>❤️ Made with Love ❤️</p>
+            <p>Untuk orang yang paling kusayangi di dunia ini</p>
+            <p>I Love You to the Moon and Back 🌙✨</p>
+        </div>
+    </div>
+
+    <!-- Modal untuk foto -->
+    <div id="photoModal" class="modal" onclick="closeModal()">
+        <span class="close-modal">&times;</span>
+        <div class="modal-content">
+            <img id="modalImg" src="" alt="Photo">
+        </div>
+    </div>
+
+    <script src="Function.js"></script>
+</body>
+</html>
